@@ -1,0 +1,98 @@
+/* //Mobile first apporach:  */
+
+@media only screen and (min-width:200px) and (max-width:575px){
+
+    .header{
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+
+
+    .header .searchbox {
+        padding: 1rem;
+    }
+    .header .searchbox input{
+        width: 18rem;
+    }
+
+.header .content3 {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;      /* Make it span full width */
+    display: flex;    /* Enab
+    le flexbox for children */
+    gap: 0;
+    /* margin:0 1rem; */
+}
+
+.header .content3 .login,
+.header .content3 .cart {
+    flex-basis: 50%;  /* Each takes half the width */
+}
+
+.header .content3 .login button,
+.header .content3 .cart button {
+    width: 100%;
+    border-radius: 0rem;
+    -webkit-border-radius: 0rem;
+    -moz-border-radius: 0rem;
+    -ms-border-radius: 0rem;
+    -o-border-radius: 0rem;
+}
+
+.banner-section
+{
+    display: none;
+}
+
+.order-banner
+{
+    margin: 6rem auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.products
+{
+    /* we need to show only 4 product on mobile screen size: */
+    flex-basis: 25%;
+}
+
+.category-items .products img{
+    width: 100%;
+}
+
+/* Now Desiging the PRODUCT SECTION: */
+.common-head h1
+{
+    margin-left: 0.5rem;
+}
+
+.product-container
+{
+
+    flex-basis: 50%;
+    flex-wrap: wrap;
+    margin: 0 1rem;
+    gap: 0.2rem;
+}
+
+.product-box
+{
+    width: 100%;
+    margin-bottom: 2.5rem;
+}
+
+footer{
+    text-align: center;
+    font-size: 0.7rem;
+    margin: 1rem 0 2rem 0;
+    padding: 1rem 0 1rem 0;
+}
+
+}
+
+
+/* NOTE: THIS CLONE WEBSITE IS ONLY RESPONSIVE FOR MOBILE FIRST APPROACH, AND LAPTOP SIZE, NOT TABLET SIZE.....SO VIVEK DO PRACTISE FOR ALL SCREEN SIZES.  */
